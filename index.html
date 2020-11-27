@@ -8,10 +8,16 @@
     <link rel="icon" href="../../../../favicon.ico">
 
     <title>Ilias Chalkidis Homepage</title>
-	<link href="https://fonts.googleapis.com/css?family=Jura&amp;subset=latin,greek" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="canonical" href="https://jpswalsh.github.io/academicons/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 
     <!-- Custom styles for this template -->
     <style>
@@ -24,24 +30,50 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family: 'Raleway';
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+
+
+.shortbio a:link { color: #70DB93; }
+.shortbio a:visited { color: #70DB93; }
+.shortbio a:hover { color: #70DB93; }
+.shortbio a:active { color: #70DB93; }
+
+.container{
+ width:80%
+
+}
+
+.jumbotron {
+  background-image: url("banner.jpeg");
+  background-size: 100%;
+  color:white;
 }
 
 div.banner{
+margin-top: 150px;
+}
+
+div.photo{
 padding: 10px 10px 0px;
-margin-right: 3px;
-margin-left:2px;
-border-style: solid;
-border-width: 5px;
-border-color: #f89d78;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
+
+img.responsive {
+  width: 90%;
+  height: auto;
+}
+
+img.rounded {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;}
+
+div.shortbio{
+width: 70%;
+background-color: rgba(0, 0, 0, 0.5);
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
@@ -54,106 +86,52 @@ border-radius: 25px;
 }
 
 div.info-section{
-font-size: 12px;
+font-size: 16px;
 }
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-  padding: 80px 10px 0;
-}
-
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-code {
-  font-size: 80%;
-}
-
 
     </style>
   </head>
 
   <body>
-
-    <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" style="height:50px">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://iliaschalkidis.github.io">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/iliaschalkidis/iliaschalkidis.github.io/raw/master/Ilias%20Chalkidis%20CV.pdf">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Posts</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item">
-      		<a class="nav-link p-2" href="https://twitter.com/KiddoThe2B" target="_blank" aria-label="Twitter">
-        	<i class="fa fa-twitter" aria-hidden="true"></i>
-			</a>
-    		</li>
-    		<li class="nav-item">
-      		<a class="nav-link p-2" href="https://www.linkedin.com/in/iliaschalkidis" target="_blank" aria-label="Twitter">
-        	<i class="fa fa-linkedin" aria-hidden="true"></i>
-			</a>
-    		</li>
-    		<li class="nav-item">
-      		<a class="nav-link p-2" href="https://github.com/iliaschalkidis" target="_blank" aria-label="Github">
-        	<i class="fa fa-github" aria-hidden="true"></i>
-			</a>
-    		</li>
-          </ul>
+  <div class="jumbotron">
+        <div class ="row banner">
+        <div class="col-sm-3 photo" style="text-align:center; margin:auto;">
+      	<img src="athens-2020.jpg" class="rounded responsive" alt="IC">
+      	</div>
+        <div class="col-sm-7 shortbio">
+        <h1>Ilias Chalkidis <a href="https://twitter.com/KiddoThe2B" target="_blank"><i class="fa fa-twitter"></i></a> 
+        <a href="https://github.com/iliaschalkidis" target="_blank"><i class="fa fa-github-alt"></i> </a>
+        <a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
+        </h1> 
+        <p class="lead" align="justify">I am PhD student in the <a href="https://www.dept.aueb.gr/en/cs" target="_blank">Department of Informatics of Athens University of Economics and Business</a> and member of the <a href="http://nlp.cs.aueb.gr" target="_blank">Natural Language Processing Group</a>, while I am also a researcher at <a href="https://dice.iit.demokritos.gr" target="_blank">AI Centre of Excellence in Document Intelligence (DICE)</a> (<a href="https://www.iit.demokritos.gr" target="_blank">IIT NCSR "Demokritos"</a>).  I expertise in legal natural language processing (AI & Law). I have been a reviewer for ACL venues (ACL2020, EMNLP2020) and AI & Law journal, while I have also served and currently serve in the program committees of AI and NLP workshops targeting legal application (<a href="https://iswc2020.semanticweb.org/program/workshops/#workshop-15" target="_blank">AI4LEGAL</a>, <a href="https://sites.google.com/view/nllp/" target="_blank">NLLP</a>).</p>
+        <p><strong>E-MAIL:</strong> ihalk[at]aueb.gr, <strong>TEL:</strong> +30-6942825565</p>
         </div>
-      </nav>
-    </header>
-
+       </div>
+    </div>
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="row">
       	<div class="col-sm-9 blog-main">
-      	<div class ="row banner">
-      	<div class="col-sm-2 photo" style="text-align:center; margin:auto;">
-      	<img src="brusells-2019.jpg" width="150" height="150" class="rounded-circle" alt="IC">
-      	</div>
-      	<div class="col-sm-9 notice">
-        <h1>Ilias Chalkidis</h1>
-        <p class="lead" align="justify">I am PhD student in the <a href="https://www.dept.aueb.gr/en/cs" target="_blank">Department of Informatics of Athens University of Economics and Business</a> and member of the <a href="http://nlp.cs.aueb.gr" target="_blank">Natural Language Processing Group</a>, while I am also a researcher at <a href="https://dice.iit.demokritos.gr">AI Centre of Excellence in Document Intelligence (DICE)</a> (<a href="https://www.iit.demokritos.gr">IIT NCSR "Demokritos"</a>). I serve as a director for <a href="http://legislation.di.uoa.gr" target="_blank">Nomothesi@ Project</a> developed by <a href="http://kr.di.uoa.gr" target="_blank">Knowledge Representation, Reasoning and Analytics Group</a> in the <a href="http://www.di.uoa.gr/eng" target="_blank">Department of Informatics of National and Kapodistrian University of Athens</a>.</p>
-        <p><strong>E-MAIL:</strong> ihalk[at]aueb.gr, <strong>TEL:</strong> +30-6942825565</p>
-        </div>
-        </div>
-        <br/><br/>
-        <div class="info-section"> 
-        <h3>Research Interests</h3>
+      	<div class="info-section"> 
+        <h2>Research Interests</h2>
         <p> My general field of research is in Artificial Intelligence, especially Natural Language Processing and Semantic Web Technologies: 
         <ul>
-        <li>Deep Learning for NLP</li>
+        <li>Deep Learning</li>
         <li>Legal Text Analytics (Legal Text Processing / LegalNLP)</li>
         <li>Information Extraction (Entity Extraction / Sentence Selection)</li>
         <li>Text Classification, especially Large-scale Multi-label Text Classification (LMTC)</li>
         <li>Information Retrieval, especially Document to Document (Doc2Doc) IR</li>
+        <li>Explainability / Interpretability of NLP models</li>
         <li>Low-resource Environments (In-domain Transfer Learning / Few-shot and Zero-shot Learning)</li>
         <li>Legal Knowledge Representation (Legislation, Contracts)</li>
         <li>E-Government – Linked Open Data</li>
         </ul>
         <p> I mainly study applications of NLP on legal use cases in several fields (e.g., legislation, court cases,  contracts).</p>
-        <br/>
-        </div>
+        <br/>       
+       </div>
         <div class="info-section"> 
-        <h3>Publications</h3>
-        <h4>-2020</h4>
+        <h2>Publications</h2>
+        <h3>-2020</h3>
         <ul>
         <li>
         <p>
@@ -161,7 +139,7 @@ code {
         </p>
         <p>Nikolaos Manginas, Ilias Chalkidis and  Prodromos Malakasiotis</p>
         <p>In the Proceedings of the Workshop on Structured Prediction for NLP (SPNLP 2020) - co-located with EMNLP 2020, (Held online due to COVID-19), November 16–20, 2020</p>
-        <p>[PUB] [<a href="https://arxiv.org/abs/2010.05763" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/2020.spnlp-1.7" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/2010.05763" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         <li>
         <p>
@@ -169,15 +147,15 @@ code {
         </p>
         <p>Ilias Chalkidis, Manos Fergadiotis, Sotiris Kotitsas, Prodromos Malakasiotis, Nikolaos Aletras and Ion Androutsopoulos</p>
         <p>In the Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP 2020), (Held online due to COVID-19), November 16–20, 2020.</p>
-        <p>[PUB] [<a href="https://arxiv.org/abs/2010.01653" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/2020.emnlp-main.607" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/2010.01653" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a> <a href="https://github.com/iliaschalkidis/lmtc-emnlp2020" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-code-branch"></i> Code</a></p>
         </li>
         <li>
         <p>
-        <strong>LEGAL-BERT: The Muppets straight out of Law School"</strong>
+        <strong>LEGAL-BERT: "The Muppets straight out of Law School"</strong>
         </p>
         <p>Ilias Chalkidis, Manos Fergadiotis, Prodromos Malakasiotis, Nikolaos Aletras and Ion Androutsopoulos</p>
         <p>In Findings of Empirical Methods in Natural Language Processing (EMNLP 2020),(Held online due to COVID-19), November 16–20, 2020.</p>
-        <p>[PUB] [<a href="https://arxiv.org/abs/2010.02559" target="_blank">E-PRINT</a>] [<a href="https://huggingface.co/nlpaueb" target="_blank">MODELS</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/2020.findings-emnlp.261" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/2010.02559" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a> <a href="https://huggingface.co/nlpaueb" target="_blank" type="button" class="btn btn-default btn-sm">&#129303; Models</a></p>
         </li>
         <li>
         <p>
@@ -185,10 +163,10 @@ code {
         </p>
         <p>John Koutsikakis, Ilias Chalkidis, Prodromos Malakasiotis and Ion Androutsopoulos</p>
         <p>In the Proceedings of the 11th Hellenic Conference on Artificial Intelligence (SETN 2020), Athens, Greece, September 2-4, 2020.</p>
-        <p>[<a href="https://dl.acm.org/doi/10.1145/3411408.3411440">PUB</a>] [<a href="https://arxiv.org/abs/2008.12014" target="_blank">E-PRINT</a>] [<a href="https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1" target="_blank">MODELS</a>]</p>
+        <p><a href="https://dl.acm.org/doi/10.1145/3411408.3411440" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/2008.12014" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a> <a href="https://huggingface.co/nlpaueb/bert-base-greek-uncased-v1" target="_blank" type="button" class="btn btn-default btn-sm">&#129303; Models</a></p>
         </li>
         </ul>
-        <h4>-2019</h4>
+        <h3>-2019</h3>
         <ul>
         <li>
         <p>
@@ -196,7 +174,7 @@ code {
         </p>
         <p>Ilias Chalkidis, Manos Fergadiotis, Prodromos Malakasiotis and Ion Androutsopoulos</p>
         <p>In the Proceedings of the Document Intelligence Workshop - co-located with NeurIPS 2019, Vancouver, Canada, December 8-14, 2019.</p>
-        <p>[<a href ="https://openreview.net/forum?id=B1x6fa95UH" target="_blank">PUB</a>] [<a href ="http://www2.aueb.gr/users/ion/docs/Contract_Element_Extraction_DI_NeurIPS_2019.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://openreview.net/forum?id=B1x6fa95UH" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://www2.aueb.gr/users/ion/docs/Contract_Element_Extraction_DI_NeurIPS_2019.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a> <a href="http://nlp.cs.aueb.gr/pubs/chalkidis_neurips_poster_2019.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-slideshare"></i> Poster</a></p>
         </li>
         <li>
         <p>
@@ -204,7 +182,7 @@ code {
         </p>
         <p> Apostolos Katsafados, Ion Androutsopoulos, Ilias Chalkidis, Manos Fergadiotis, George N. Leledakis and Emmanouil G. Pyrgiotakis</p>
         <p>In SSRN, November 3, 2019.</p>
-        <p>[<a href ="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3474583" target="_blank">PUB</a>] [<a href ="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3474583" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3474583" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a></p>
         </li>
         <li>
         <p>
@@ -212,7 +190,7 @@ code {
         </p>
         <p>Ilias Chalkidis, Manos Fergadiotis, Prodromos Malakasiotis and Ion Androutsopoulos</p>
         <p>In the Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019) (Short Papers), Florence, Italy, July 28 - August 2, 2019.</p>
-        <p>[<a href ="https://www.aclweb.org/anthology/P19-1636/" target="_blank">PUB</a>] [<a href ="https://arxiv.org/abs/1906.02192" target="_blank">E-PRINT</a>] [<a href="http://nlp.cs.aueb.gr/software_and_datasets/EURLEX57K/index.html" target="_blank">DATA</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/P19-1636/" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/1906.02192" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="http://nlp.cs.aueb.gr/pubs/Large_Scale_Multi_Label_Text_Classification_poster.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-slideshare"></i> Poster</a> <a href="https://github.com/iliaschalkidis/lmtc-eurlex57k" target="_blank" type="button" class="btn btn-default btn-sm"><i class="icon-github"></i> Code</a> <a href="http://nlp.cs.aueb.gr/software_and_datasets/EURLEX57K/index.html" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-download"></i> Dataset</a></p>
         </li>
         <li>
         <p>
@@ -220,7 +198,7 @@ code {
         </p>
         <p>Ilias Chalkidis, Ion Androutsopoulos and Nikolaos Aletras</p>
         <p>In the Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL 2019) (Short Papers), Florence, Italy, July 28 - August 2, 2019.</p>
-        <p>[<a href ="https://www.aclweb.org/anthology/P19-1424/" target="_blank">PUB</a>] [<a href ="https://arxiv.org/abs/1906.02059" target="_blank">E-PRINT</a>] [<a href="https://archive.org/details/ECHR-ACL2019" target="_blank">DATA</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/P19-1424/" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/1906.02059" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a> <a href="https://archive.org/details/ECHR-ACL2019" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-download"></i> Dataset</a></p>
         </li>
         <li>
         <p>
@@ -228,7 +206,7 @@ code {
         </p>
         <p>Ilias Chalkidis, Manos Fergadiotis, Prodromos Malakasiotis, Nikolaos Aletras and Ion Androutsopoulos</p>
         <p>In the Proceedings of the Workshop on Natural Legal Language Processing - co-located with NAACL-HLT 2019, Minneapolis, USA, June 2-7, 2019.</p>
-        <p>[<a href ="https://www.aclweb.org/anthology/W19-2209" target="_blank">PUB</a>] [<a href ="https://arxiv.org/abs/1905.10892" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://www.aclweb.org/Article/W19-2209" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/1905.10892" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         <li>
         <p>
@@ -236,10 +214,10 @@ code {
         </p>
         <p>Themis Beris, Iosif Angelidis, Ilias Chalkidis, Charalampos Nikolau, Christos Papaloukas, Panagiotis Soursos and Manolis Koubarakis</p>
         <p>In the Proceedings of the Workshop on Linked Data on the Web and its Relationship with Distributed Ledgers (LDOW/LDDL) of the Web Conference 2019, San Francisco, USA, May 13-17, 2019.</p>
-        <p>[<a href="https://dl.acm.org/doi/10.1145/3308560.3317077" target="_blank">PUB</a>] [<a href ="http://cgi.di.uoa.gr/~koubarak/publications/2019/www19companion-206.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://dl.acm.org/doi/10.1145/3308560.3317077" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://cgi.di.uoa.gr/~koubarak/publications/2019/www19companion-206.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         </ul>
-        <h4>-2018</h4>
+        <h3>-2018</h3>
         <ul>
         <li>
         <p>
@@ -247,7 +225,7 @@ code {
         </p>
         <p>Iosif Angelidis, Ilias Chalkidis and Manolis Koubarakis</p>
         <p>In the Proceedings of the 31st International Conference on Legal Knowledge and Information Systems (JURIX 2018), Groningen, The Netherlands, December 12-14, 2018.</p>
-        <p>[<a href ="http://ebooks.iospress.nl/volumearticle/50829" target="_blank">PUB</a>] [<a href="http://cgi.di.uoa.gr/~koubarak/publications/2018/jurix2018.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="http://ebooks.iospress.nl/volumearticle/50829" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://cgi.di.uoa.gr/~koubarak/publications/2018/jurix2018.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         <li>
         <p>
@@ -255,7 +233,7 @@ code {
         </p>
         <p>Ilias Chalkidis and Dimitrios Kampas</p>
         <p>In Artificial Intelligence and Law, Volume 27:2, Pages 171–198, Springer, December 11, 2018.</p>
-        <p>[<a href="https://link.springer.com/article/10.1007/s10506-018-9238-9" target="_blank">PUB</a>] [<a target="_blank">E-PRINT</a>] [<a href="https://archive.org/details/Law2Vec" target="_blank">DATA</a>]</p>
+        <p><a href="https://link.springer.com/article/10.1007/s10506-018-9238-9" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://archive.org/details/Law2Vec" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-download"></i> Dataset</a></p>
         </li>
         <li>
         <p>
@@ -263,7 +241,7 @@ code {
         </p>
         <p>Ilias Chalkidis‚ Ion Androutsopoulos and Achilleas Michos</p>
         <p>In the Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (ACL 2018) (Short Papers), Melbourne, Australia, July 15-20, 2018. Pages 254–259 . 2018.</p>
-        <p>[<a href="http://aclweb.org/anthology/P18-2041" target="_blank">PUB</a>] [<a href="https://arxiv.org/abs/1805.03871" target="_blank">E-PRINT</a>][<a href="" target="_blank">POSTER</a>]</p>
+        <p><a href="http://aclweb.org/Article/P18-2041" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/1805.03871" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="http://nlp.cs.aueb.gr/pubs/ACL_2018_Poster.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-slideshare"></i> Poster</a></p>
         </li>
         <li>
         <p>
@@ -271,10 +249,10 @@ code {
         </p>
         <p>George Leledakis, Apostolos Katsafados, Ion Androutsopoulos, Ilias Chalkidis, Emmanouel Fergadiotis</p>
         <p>In the Proceedings of the 9th National Conference of the Financial Engineering and Banking Society (FEBS 2018), Athens, Greece, 2018</p>
-        <p>[PUB] [E-PRINT]</p>
+        <p> </p>
         </li>
         </ul>
-        <h4>-2017</h4>
+        <h3>-2017</h3>
         <ul>
         <li>
         <p>
@@ -282,7 +260,7 @@ code {
         </p>
         <p>Ion Androutsopoulos, Ilias Chalkidis, Emmanouel Fergadiotis, Apostolos Katsafados, George Leledakis and Alexandra Ntetsika</p>
         <p>In the Proceedings of the 8th National Conference of the Financial Engineering and Banking Society (FEBS 2017)‚ Athens‚ Greece‚ December 18-19‚ 2017. 2017.</p>
-        <p>[PUB] [E-PRINT]</p>
+        <p> </p>
         </li>
         <li>
         <p>
@@ -290,7 +268,7 @@ code {
         </p>
         <p>Ilias Chalkidis and Ion Androutsopoulos</p>
         <p>In the Proceedings of the 30th International Conference on Legal Knowledge and Information Systems (JURIX 2017)‚ Luxembourg City‚ Luxembourg‚ December 13-15‚ 2017. 2017.</p>
-        <p>[<a href="http://ebooks.iospress.nl/volumearticle/48057" target="_blank">PUB</a>] [<a href="http://nlp.cs.aueb.gr/pubs/jurix2017.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="http://ebooks.iospress.nl/volumearticle/48057" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://nlp.cs.aueb.gr/pubs/jurix2017.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         <li>
         <p>
@@ -298,7 +276,7 @@ code {
         </p>
         <p>Ilias Chalkidis‚ Ion Androutsopoulos and Achilleas Michos</p>
         <p>In Proceedings of the 16th International Conference on Artificial Intelligence and Law (ICAIL 2017), London, UK, June 12–16, 2017, Pages 19–28. 2017.</p>
-        <p>[<a href="" target="_blank">PUB</a>] [<a href="http://www2.aueb.gr/users/ion/docs/icail2017.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://dl.acm.org/doi/10.1145/3086512.3086515" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://www2.aueb.gr/users/ion/docs/icail2017.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         <li>
         <p>
@@ -306,7 +284,7 @@ code {
         </p>
         <p>Ilias Chalkidis‚ Charalampos Nikolaou‚ Panagiotis Soursos and Manolis Koubarakis</p>
         <p>In the Proceedings of the 14th European Semantic Web Conference (ESWC 2017)‚ Portorož‚ Slovenia‚ May 28 − June 1‚ 2017. Pages 591–606. 2017.</p>
-        <p>[<a href="https://link.springer.com/chapter/10.1007/978-3-319-58068-5_36" target="_blank">PUB</a>] [<a href="http://cgi.di.uoa.gr/~koubarak/publications/2017/eswc17-legislation.pdf" target="_blank">E-PRINT</a>]</p>
+        <p><a href="https://link.springer.com/chapter/10.1007/978-3-319-58068-5_36" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://cgi.di.uoa.gr/~koubarak/publications/2017/eswc17-legislation.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         </ul>
         </div>
@@ -317,7 +295,7 @@ code {
         <table>
         <tr>
         <td width="50"><img height="50" src="aueb-logo.jpg"></td>
-        <td style="line-height:15px;"><span style="font-family:'Jura'; font-size: 14px; color: #800000; letter-spacing: 1px;"><strong>AUEB - NATURAL LANGUAGE PROCESSING GROUP</strong></span></td>
+        <td style="line-height:15px;"><span style="font-family:'Raleway'; font-size: 18px; color:black; letter-spacing: 1px;"><strong>AUEB - NATURAL LANGUAGE PROCESSING GROUP</strong></span></td>
         </tr>
         </table>
         </a><hr>
@@ -325,7 +303,7 @@ code {
         <table>
         <tr>
         <td width="50"><img height="40" src="nomothesia-logo.png"></td>
-        <td style="line-height:15px;"><span style="font-family:'Jura'; font-size: 14px; color:black;"><strong>ΝΟΜΟΘΕΣΙ<span style="font-size: 17px;">@</span> - THE OPEN GREEK LEGISLATION PLATFORM</strong></span></td>
+        <td style="line-height:15px;"><span style="font-family:'Raleway'; font-size: 18px; color:black;"><strong>ΝΟΜΟΘΕΣΙ<span style="font-size: 17px;">@</span> - THE OPEN GREEK LEGISLATION PLATFORM</strong></span></td>
         </tr>
         </table>
         </a><hr>
@@ -333,7 +311,7 @@ code {
         <table>
         <tr>
         <td width="50"><img height="40" src="dice-logo.png"></td>
-        <td style="line-height:15px;"><span style="font-family:'Jura'; font-size: 14px; color:black;"><strong>DICE - AI CENTRE OF EXCELLENCE IN DOCUMENT INTELLIGENCE</strong></span></td>
+        <td style="line-height:15px;"><span style="font-family:'Raleway'; font-size: 18px; color:black;"><strong>DICE - AI CENTRE OF EXCELLENCE IN DOCUMENT INTELLIGENCE</strong></span></td>
         </tr>
         </table>
         </a><hr>
