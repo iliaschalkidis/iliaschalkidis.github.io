@@ -44,6 +44,12 @@ body {
 
 }
 
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
 .jumbotron {
   background-image: url("banner copy.jpeg");
   background-size: 100%;
@@ -89,10 +95,34 @@ div.info-section{
 font-size: 16px;
 }
 
+hr{
+    height: 1px;
+    background-color: #101010;
+    border: 1px solid;
+    border-color: #101010;
+}
+
     </style>
   </head>
 
   <body>
+  <nav class="navbar navbar-inverse" style="margin-bottom:0px">
+    <div class="container-fluid" style="padding-left:0px">
+    <div class="collapse navbar-collapse" id="myNavbar" style="padding-left:0px">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#academic-service">Service</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#press">Press</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="https://twitter.com/KiddoThe2B" target="_blank"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
+        <li><a href="https://github.com/iliaschalkidis" target="_blank"><i class="fa fa-github-alt fa-lg"></i> Github</a></li>
+        <li><a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <div class="jumbotron">
         <div class ="row banner">
         <div class="col-sm-3 photo" style="text-align:center; margin:auto;">
@@ -121,7 +151,7 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <li>Deep Learning</li>
         <li>Legal Text Analytics (Legal Text Processing / LegalNLP)</li>
         <li>Information Extraction (Entity Extraction / Sentence Selection)</li>
-        <li>Text Classification, especially Large-scale Multi-label Text Classification (LMTC)</li>
+        <li>Large-scale Multi-label Text Classification (LMTC)</li>
         <li>Information Retrieval, especially Document to Document (Doc2Doc) IR</li>
         <li>Explainability / Interpretability of NLP models</li>
         <li>Fairness / Robustness of NLP models</li>
@@ -132,7 +162,8 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p> I mainly study applications of NLP on legal use cases in several sub-fields (e.g., legislation, court cases,  contracts).</p>
         <br/>       
        </div>
-        <div class="info-section"> 
+       <hr>
+        <div id="publications" class="info-section"> 
         <h2>Publications</h2>
         <h3>-2021</h3>
         <ul>
@@ -358,6 +389,70 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         </li>
         </ul>
         </div>
+        </div>
+        <hr>
+        <div id="academic-service" class="info-section"> 
+        <h2>Service</h2>
+        <h3><strong>Program Committee</strong></h3>
+        <p>NLLP: 2020, 2021</p>
+        <p>WNUT: 2021</p>
+        <p>AI4LEGAL: 2020</p>
+        <p>DeeLIO: 2021</p>
+        <p>
+        <h3><strong>Reviewing</strong></h3>
+        <p><u>Conferences</u></p>
+        <p>ARR: 2021</p>
+        <p>EMNLP: 2020 (Outstanding Reviewer), 2021</p>
+        <p>ACL: 2020, 2021</p>
+        <p>NAACL: 2020, 2021</p>
+        <p><u>Journals</u></p>
+        <p>AI & Law Journal</p>
+        <p>PeerJ</p>
+        <p>ACM Computing Surveys</p>
+        <p>Computer Speech & Language</p>
+
+        </div>
+        <hr>
+        <div id="talks" class="info-section"> 
+        <h2>Talks</h2>
+        <ul>
+        <li>
+        <p>
+        <strong>Paragraph-level Rationale Extraction through Regularization: A case study on European Court of Human Rights Cases</strong>
+        </p>
+        <p>NLLP Talk Series, 16 April 2021</p>
+        </li>
+        <li>
+        <p>
+        <strong>Large-scale Multi-label Text Classification (LMTC):  Labelling documents with hierarchically organized labels from taxonomies.</strong>
+        </p>
+        <p>AI4LEGAL Workshop, ISWC, 2 November 2020</p>
+        </li>
+        <li>
+        <p>
+        <strong>Large-scale Multi-Label Text Classification on EU Legislation</strong>
+        </p>
+        <p>Maastricht Law and Tech Lab Launching Event, 17 October 2019</p>
+        </li>
+        </ul>
+        </div>
+        <hr>
+        <div id="press" class="info-section"> 
+        <h2>Press</h2>
+        <ul>
+        <li>
+        <p>
+        <strong><a href="https://www.dailyjournal.com/articles/364606-gluing-together-a-benchmark-for-ai-natural-language-legal-understanding" target="_blank">Gluing together a benchmark for AI Natural Language Legal Understanding</a></strong>
+        </p>
+        <p>Lance Eliot , The Daily Journal (USA), 2021</p>
+        </li>
+        <li>
+        <p>
+        <strong><a href="https://www.newscientist.com/article/2212953-ai-learns-to-predict-the-outcomes-of-human-rights-court-cases/" target="_blank">AI learns to predict the outcomes of human rights court cases</a></strong>
+        </p>
+        <p>Donna Lu, New Scientist (UK), 2019</p>
+        </li>
+        </ul>
         </div>
       </div>
     </main>
