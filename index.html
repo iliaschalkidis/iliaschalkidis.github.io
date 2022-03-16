@@ -61,7 +61,6 @@ margin-top: 150px;
 }
 
 div.photo{
-padding: 10px 10px 0px;
 -webkit-border-radius: 50px;
 -moz-border-radius: 50px;
 border-radius: 50px;
@@ -108,9 +107,17 @@ hr{
   <body>
   <nav class="navbar navbar-inverse" style="margin-bottom:0px">
     <div class="container-fluid" style="padding-left:0px">
-    <div class="collapse navbar-collapse" id="myNavbar" style="padding-left:0px">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#"></a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="padding-left:30px">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#academic-service">Service</a></li>
         <li><a href="#talks">Talks</a></li>
@@ -128,13 +135,13 @@ hr{
         <div class="col-sm-3 photo" style="text-align:center; margin:auto;">
       	<img src="copenhagen-2021.jpg" class="rounded responsive" alt="IC">
       	</div>
-        <div class="col-sm-7 shortbio">
+        <div class="col-sm-7 shortbio" style="text-align:center; margin:auto;">
         <h1>Ilias Chalkidis <a href="https://twitter.com/KiddoThe2B" target="_blank"><i class="fa fa-twitter"></i></a> 
         <a href="https://github.com/iliaschalkidis" target="_blank"><i class="fa fa-github-alt"></i> </a>
         <a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
         </h1> 
         <p class="lead" align="justify">I am a post-doctoral researcher at the <a href="https://di.ku.dk/english/" target="_blank">
-Department of Computer Science at University of Copenhagen</a> (<a href="https://coastalcph.github.io" target="_blank">CoAStaL NLP Group</a>). I recently received my Ph.D. from the <a href="https://www.dept.aueb.gr/en/cs" target="_blank">Department of Informatics at Athens University of Economics and Business</a>. My expertise is in Legal Natural Language Processing (LegalNLP), also known as Legal Intelligence. I have been a reviewer for ACL venues (ACL/EMNLP/NAACL 2020-2021) and reputable journals, such as AI & Law, PeerJ, and Computer Speech & Language. I have also served and currently serve in the program committees of AI and NLP workshops targeting legal applications (<a href="https://iswc2020.semanticweb.org/program/workshops/#workshop-15" target="_blank">AI4LEGAL</a>, <a href="https://sites.google.com/view/nllp/" target="_blank">NLLP</a>).</p>
+Department of Computer Science at University of Copenhagen</a> (<a href="https://coastalcph.github.io" target="_blank">CoAStaL NLP Group</a>). I recently received my Ph.D. from the <a href="https://www.dept.aueb.gr/en/cs" target="_blank">Department of Informatics at Athens University of Economics and Business</a>. My expertise is in Legal Natural Language Processing (LegalNLP), also known as Legal Intelligence. I have been a reviewer for ACL venues (ACL/EMNLP/NAACL 2020-2021) and reputable journals, such as AI & Law, PeerJ, and Computer Speech & Language. I am also part of the organizing committee of the Natural Legal Language Processing (<a href="https://sites.google.com/view/nllp/" target="_blank">NLLP</a>) workshop.</p>
         <p>If you find Legal Text Processing exciting, then please reach out and let me know! I would love to collaborate in interesting projects &#129303;</p>
         <p><strong>E-MAIL:</strong> [<i>firstName</i>] [dot] [<i>lastName</i>] [at] di [dot] ku [dot] dk (Try me now bots! &#x1F916;)</p>
         </div>
@@ -149,21 +156,22 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p> My general field of research is in Artificial Intelligence, especially Natural Language Processing: 
         <ul>
         <li>Deep Learning</li>
-        <li>Legal Text Analytics (Legal Text Processing / LegalNLP)</li>
-        <li>Information Extraction (Entity Extraction / Sentence Selection)</li>
+        <li>Legal Text Analytics (Legal NLP / NLU)</li>
+        <li>Long Document Processing (Ks of tokens/words)</li>
         <li>Large-scale Multi-label Text Classification (LMTC)</li>
-        <li>Information Retrieval, especially Document to Document (Doc2Doc) IR</li>
         <li>Explainability / Interpretability of NLP models</li>
-        <li>Fairness / Robustness of NLP models</li>
+        <li>Fairness & Robustness of NLP models</li>
+        <li>Document to Document (Doc2Doc) Information Retrieval</li>
         <li>Low-resource Environments (In-domain Transfer Learning / Few-shot and Zero-shot Learning)</li>
+        <li>Information Extraction (Entity Extraction / Sentence Extraction)</li>
         <li>Legal Knowledge Representation (Legislation, Contracts)</li>
         <li>E-Government – Linked Open Data</li>
         </ul>
-        <p> I mainly study applications of NLP on legal use cases in several sub-fields (e.g., legislation, court cases,  contracts).</p>
+        <p> I mainly study applications of NLP technologies on legal documents in several sub-fields of law (e.g., legislation, court cases,  contracts).</p>
         <br/>       
        </div>
        <hr>
-        <div id="publications" class="info-section"> 
+        <div id="publications" class="info-section" style="padding-bottom:25px"> 
         <h2>Publications</h2>
         <h3>-2022</h3>
         <ul>
@@ -173,7 +181,7 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         </p>
         <p>Ilias Chalkidis and Anders Søgaard</p>
         <p>In Findings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL 2022), 2022</p>
-        <p><a href="" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="https://github.com/coastalcph/lw-robust" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-open-materials"></i> Code</a></p>
+        <p><a href="https://arxiv.org/abs/2203.07856" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="https://arxiv.org/abs/2203.07856" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="https://github.com/coastalcph/lw-robust" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-open-materials"></i> Code</a></p>
         </li>
         <li>
         <p>
@@ -426,7 +434,7 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         </div>
         </div>
         <hr>
-        <div id="academic-service" class="info-section"> 
+        <div id="academic-service" class="info-section" style="padding-bottom:25px"> 
         <h2>Service</h2>
         <h3><strong>Organizing Committee</strong></h3>
         <p>NLLP: 2022</p>
@@ -434,11 +442,11 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>NLLP: 2020, 2021</p>
         <p>WNUT: 2021</p>
         <p>AI4LEGAL: 2020</p>
-        <p>DeeLIO: 2021</p>
+        <p>DeeLIO: 2021, 2022</p>
         <p>
         <h3><strong>Reviewing</strong></h3>
         <p><u>Conferences</u></p>
-        <p>ARR: 2021</p>
+        <p>ARR: 2021, 2022</p>
         <p>EMNLP: 2020 (Outstanding Reviewer), 2021</p>
         <p>ACL: 2020, 2021</p>
         <p>NAACL: 2020, 2021</p>
@@ -448,38 +456,38 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>Computer Speech & Language</p>
         </div>
         <hr>
-        <div id="talks" class="info-section"> 
-        <h2>Invited Talks</h2>
+        <div id="talks" class="info-section" style="padding-bottom:25px"> 
+        <h2>Invited Talks / Guest Lectures</h2>
         <ul>
         <li>
         <p>
         <strong>A short NLP story from bag-of-words to the Muppet Show (and desiderata for trustworthy assistive legal NLP technologies)</strong>
         </p>
-        <p>Guest Lecture @ Information Retrieval and Data Mining, University College London, 26 January 2022</p>
+        <p>Guest Lecture @ Information Retrieval and Data Mining, University College London, 3 March 2022</p>
         </li>
         <li>
         <p>
         <strong>Transforming law with augmented lawyering: Advances and challenges in legal text processing (Oriented to NLP audience)</strong>
         </p>
-        <p>Digital Humanities Seminar Series, University of Wolverhampton, 26 January 2022</p>
+        <p>Invited Talk @ Digital Humanities Seminar Series, University of Wolverhampton, 26 January 2022</p>
         </li>
         <li>
         <p>
         <strong>Transforming law with augmented lawyering: Advances and challenges in legal text processing (Oriented to Law audience)</strong>
         </p>
-        <p>AI & Law Conference (co-hosted by recode.law, and Oxford Fintech & Legaltech Society), 20 January 2022</p>
+        <p>Invited Talk @ AI & Law Conference (co-hosted by recode.law, and Oxford Fintech & Legaltech Society), 20 January 2022</p>
         </li>
         <li>
         <p>
         <strong>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding - NLP in the era of Muppets</strong>
         </p>
-        <p>NLP Seminars (Universität Bern), 3 December 2021</p>
+        <p>Guest Lecture @ NLP Seminars (Universität Bern), 3 December 2021</p>
         </li>
         <li>
         <p>
         <strong>Paragraph-level Rationale Extraction through Regularization: A case study on European Court of Human Rights Cases</strong>
         </p>
-        <p>NLLP Talk Series, 16 April 2021</p>
+        <p>Invited Talk @ NLLP Talk Series, 16 April 2021</p>
         </li>
         <li>
         <p>
@@ -491,18 +499,18 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>
         <strong>Large-scale Multi-Label Text Classification on EU Legislation</strong>
         </p>
-        <p>Maastricht Law and Tech Lab Launching Event, 17 October 2019</p>
+        <p>Invited Talk @ Maastricht Law and Tech Lab Launching Event, 17 October 2019</p>
         </li>
         <li>
         <p>
         <strong>Natural Language Processing in the Deep Learning Era: The story so far…</strong>
         </p>
-        <p>9th PyData Athens Meetup, 23 April 2019</p>
+        <p>Invited Talk @ 9th PyData Athens Meetup, 23 April 2019</p>
         </li>
         </ul>
         </div>
         <hr>
-        <div id="press" class="info-section"> 
+        <div id="press" class="info-section" style="padding-bottom:25px"> 
         <h2>Press</h2>
         <ul>
         <li>
