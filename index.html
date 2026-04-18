@@ -1,173 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilias Chalkidis Homepage</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<!-- 
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    <!-- Bootstrap core CSS -->
+ -->
+    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap' rel='stylesheet'>
+	<!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="canonical" href="https://jpswalsh.github.io/academicons/">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-
-    <!-- Custom styles for this template -->
+ -->
+    
     <style>
-    /* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  font-family: 'Raleway';
-}
+        /* Base Styles & Reset */
+        *, *::before, *::after { box-sizing: border-box; }
 
+        :root {
+            --text-color: #222;
+            --border-color: #e0e0e0;
+            --hover-bg: #f5f5f5;
+            --icon-color: #555;
+        }
 
-.shortbio a:link { color: #70DB93; }
-.shortbio a:visited { color: #70DB93; }
-.shortbio a:hover { color: #70DB93; }
-.shortbio a:active { color: #70DB93; }
+        body {
+            background-color: #ffffff;
+            color: var(--text-color);
+            font-family: 'Raleway';
+            line-height: 1.6;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-.container{
- width:80%
+        .container { max-width: 1000px; width: 100%; }
 
-}
+        /* Header / Profile Section */
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
 
-.navbar {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: #f0f0f0; 
+        }
 
-.jumbotron {
-  background-image: url("banner copy.jpeg");
-  background-size: 100%;
-  color:white;
-}
+        .intro-text h1 {
+            margin: 0 0 10px 0;
+            font-size: 4rem;
+            font-weight: 600;
+        }
 
-div.banner{
-margin-top: 150px;
-}
+        .intro-text p {
+            margin: 0 0 20px 0;
+            color: #555;
+            font-size: 1.5rem;
+        }
 
-div.photo{
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 50px;
-}
+        /* Social Buttons */
+        .social-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
 
-img.responsive {
-  width: 90%;
-  height: auto;
-}
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid var(--border-color);
+            color: var(--icon-color);
+            text-decoration: none;
+            font-size: 1.4rem;
+            transition: all 0.2s ease;
+        }
 
-img.rounded {
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 50px;}
+        .social-btn:hover {
+            background-color: var(--hover-bg);
+            color: #000;
+            border-color: #bbb;
+        }
+        
+        /* Accordion Styles (Same as before) */
+        .accordion-container { border-top: 1px solid var(--border-color); }
+        .accordion-btn {
+            background: none; border: none; border-bottom: 1px solid var(--border-color);
+            width: 100%; padding: 20px 0; text-align: left; font-size: 1.5rem;
+            font-weight: 500; cursor: pointer; display: flex; justify-content: space-between;
+        }
+        .accordion-btn::after { content: '\002B'; color: #777; }
+        .accordion-btn.active::after { content: '\2212'; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .content-inner { padding: 20px 0 30px 0; color: #444; }
 
-div.shortbio{
-width: 70%;
-background-color: rgba(0, 0, 0, 0.5);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-}
-
-sidelink {
-border: 2px solid;
-border-radius: 25px;
-
-}
-
-div.info-section{
-font-size: 16px;
-}
-
-hr{
-    height: 1px;
-    background-color: #101010;
-    border: 1px solid;
-    border-color: #101010;
-}
-
+        @media (max-width: 600px) {
+            .profile-section { flex-direction: column; align-items: center; text-align: center; }
+            .social-links { justify-content: center; }
+        }
+        
+        strong { font-weight: bold; }
     </style>
-  </head>
+</head>
+<body>
 
-  <body>
-  <nav class="navbar navbar-inverse" style="margin-bottom:0px">
-    <div class="container-fluid" style="padding-left:0px">
-    <div class="navbar-header">
-    <a class="navbar-brand" href="#"></a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar" style="padding-left:30px">
-      <ul class="nav navbar-nav">
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#academic-service">Service</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#press">Press</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="https://twitter.com/KiddoThe2B" target="_blank"><i class="fa fa-twitter fa-lg"></i> Twitter</a></li>
-        <li><a href="https://github.com/iliaschalkidis" target="_blank"><i class="fa fa-github-alt fa-lg"></i> Github</a></li>
-        <li><a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i> Google Scholar</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  <div class="jumbotron">
-        <div class ="row banner">
-        <div class="col-sm-3 photo" style="text-align:center; margin:auto;">
-      	<img src="copenhagen-2021.jpg" class="rounded responsive" alt="IC">
-      	</div>
-        <div class="col-sm-7 shortbio" style="text-align:center; margin:auto;">
-        <h1>Ilias Chalkidis <a href="https://twitter.com/KiddoThe2B" target="_blank"><i class="fa fa-twitter"></i></a> 
-        <a href="https://github.com/iliaschalkidis" target="_blank"><i class="fa fa-github-alt"></i> </a>
-        <a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
-        </h1> 
-        <p class="lead" align="justify">I am an Assistant Professor of Natural Language Processing (NLP) at the <a href="https://di.ku.dk/english/" target="_blank">
-Department of Computer Science at University of Copenhagen</a> (<a href="https://coastalcph.github.io" target="_blank">CoAStaL NLP Group</a>).</p>
-        <p align="left">My core expertise is in Legal Natural Language Processing (LegalNLP), while I am also actively working on topics related to Trustworthy and Responsible AI (Fairness, Robustness, and Explainability) and recently NLP for politics. I have published several publications, mostly at top-tier conferences, such as venues adjacent to the Association of Computational Linguistics (ACL). My publication record accounts for more than 5,000 citations (<a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank">Google Scholar</a>). I have also offered invited talks and guest lectures to diverse audiences (CS and Law) in academia and industry. I am also part of the organizing committee of the Natural Legal Language Processing (<a href="https://sites.google.com/view/nllp/" target="_blank">NLLP</a>) workshop.</p>
-        <p align="left">If you are excited on topics related to NLP for Politics, or societechnical challenges of LLM alignment, then please reach out and let me know!  &#129303;</p>
+    <div class="container">
+        <header class="profile-section">
+            <img src="me.jpg" alt="Profile Picture" class="profile-img">
+            
+            <div class="intro-text">
+                <h1>Ilias Chalkidis</h1>
+                 <p class="lead" align="justify">I am an Assistant Professor of Natural Language Processing (NLP) in the <a href="https://di.ku.dk/english/" target="_blank"> Department of Computer Science at the University of Copenhagen</a>.</p>
+        <p align="left">My core expertise is in Legal Natural Language Processing (LegalNLP), while I have also worked on topics related to Trustworthy and Responsible AI (Fairness, Robustness, and Explainability). More recently, I am actively working on topics related to NLP for politics, and sociotechnical challenges of GenAI, exploring the political stance of LLMs, and the societal impact of GenAI technologies. I have published several publications, mostly at top-tier conferences, such as venues adjacent to the Association of Computational Linguistics (ACL). My publication record accounts for more than 6,000 citations (<a href="https://scholar.google.com/citations?user=BrtAqz8AAAAJ" target="_blank">Google Scholar</a>). I have also offered invited talks and guest lectures to diverse audiences (CS and Law) in academia and industry. I am also part of the organizing committee of the Natural Legal Language Processing (<a href="https://sites.google.com/view/nllp/" target="_blank">NLLP</a>) workshop.</p>
+        <p align="left">If you are excited on topics related to NLP for Politics, or sociotechnical challenges of GenAI, then please reach out and let me know!  &#129303;</p>
         <p align="left"><strong>E-MAIL:</strong> [<i>firstName</i>] [dot] [<i>lastName</i>] [at] di [dot] ku [dot] dk (Try me now bots! &#x1F916;)</p>
-        </div>
-       </div>
-    </div>
-    <!-- Begin page content -->
-    <main role="main" class="container">
-      <div class="row">
-      	<div class="col-sm-12 blog-main">
-      	<div class="info-section"> 
-        <h2>Research Interests</h2>
-        <p> My general field of research is in Artificial Intelligence, especially Natural Language Processing: 
-        <ul>
-        <li>AI Alignment (Sociotechnical Challenges)</li>
-        <li>NLP for Politics (Political Bias / LLMs as Voting Assistants)</li>
-        <li>Legal Text Analytics (Legal NLP / NLU)</li>
-        <li>Explainability / Interpretability of NLP models (XAI)</li>
-        <li>Trustworthy and Responsible AI (Fairness & Robustness of NLP models)</li>
-        </ul>
-        <br/>       
-       </div>
-       <hr>
-        <div id="publications" class="info-section" style="padding-bottom:25px"> 
-        <h2>Publications</h2>
-        <h3>-2026</h3>
+       
+                <div class="social-links">
+                    <a href="#" class="social-btn" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                    <a href="#" class="social-btn" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+                    <a href="#" class="social-btn" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main class="accordion-container">
+        <!-- 
+<button class="accordion-btn active">News</button>
+        <div class="accordion-content" style="max-height: fit-content;">
+        <div class="content-inner">
+        <p><strong>25/04/2026 ~~ New paper accepted!</strong></p>
+        </div></div>
+ -->
+        
+        <button class="accordion-btn"><strong>Publications</strong></button>
+            <div class="accordion-content">
+            <div class="content-inner">
+            <h3>-2026</h3>
         <ul>
         <li>
         <p>
@@ -175,7 +161,7 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         </p>
         <p>Ilias Chalkidis, Stephanie Brandl, Paris Aslanidis</p>
         <p>In the Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026), Rabat, Morocco, March 24-29, 2026</p>
-        <p><a href="https://arxiv.org/abs/2507.19303" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="https://huggingface.co/collections/coastalcph/identifying-populist-rhetoric-686e538a71643fb7529d5639" target="_blank" type="button" class="btn btn-default btn-sm">&#129303; Datasets and Models Collection</a></p>
+        <p><a href="https://aclanthology.org/2026.eacl-long.40/" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a><a href="https://arxiv.org/abs/2507.19303" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a><a href="https://huggingface.co/collections/coastalcph/identifying-populist-rhetoric-686e538a71643fb7529d5639" target="_blank" type="button" class="btn btn-default btn-sm">&#129303; Datasets and Models Collection</a></p>
         </li>
         <li>
         <p>
@@ -661,20 +647,20 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p><a href="https://link.springer.com/chapter/10.1007/978-3-319-58068-5_36" target="_blank" type="button" class="btn btn-default btn-sm"><i class="fa fa-book"></i> Article</a> <a href="http://cgi.di.uoa.gr/~koubarak/publications/2017/eswc17-legislation.pdf" target="_blank" type="button" class="btn btn-default btn-sm"><i class="ai ai-arxiv ai-1x"></i> Arxiv pre-print</a></p>
         </li>
         </ul>
-        </div>
-        </div>
-        <hr>
-        <div id="academic-service" class="info-section" style="padding-bottom:25px"> 
-        <h2>Service</h2>
-        <h3><strong>Organizing Committee</strong></h3>
-        <p>NLLP: 2022, 2023, 2024, 2025</p>
-        <h3><strong>Program Committee</strong></h3>
+            </div></div>
+            
+            <button class="accordion-btn"><strong>Service</strong></button>
+            <div class="accordion-content"><div class="content-inner">
+            <h4><strong>Organizing Committee</strong></h4>
+        <p>NLLP: 2022, 2023, 2024, 2025, 2026</p>
+        <br>
+        <h4><strong>Program Committee</strong></h4>
         <p>NLLP: 2020, 2021</p>
         <p>WNUT: 2021</p>
         <p>AI4LEGAL: 2020, 2021, 2022</p>
         <p>DeeLIO: 2021, 2022</p>
-        <p>
-        <h3><strong>Reviewing</strong></h3>
+        <br>
+        <h4><strong>Reviewing</strong></h4>
         <p><u>Conferences</u></p>
         <p>ARR: 2021, 2022, 2023, 2024, 2025 (Action Editor / Area Chair)</p>
         <p>EMNLP: 2020 (Outstanding Reviewer), 2021, 2022, 2023</p>
@@ -692,10 +678,10 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>Machine Learning</p>
         <p>PeerJ</p>
         <p>Philosophical Transactions of the Royal Society</p>
-        </div>
-        <hr>
-        <div id="talks" class="info-section" style="padding-bottom:25px"> 
-        <h2>Invited Talks / Guest Lectures</h2>
+            </div></div>
+            
+            <button class="accordion-btn"><strong>Invited Talks &amp; Guest Lectures</strong></button>
+            <div class="accordion-content"><div class="content-inner">
         <ul>
         <li>
 		<p>
@@ -796,11 +782,11 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>Invited Talk @ 9th PyData Athens Meetup, 23 April 2019</p>
         </li>
         </ul>
-        </div>
-        <hr>
-        <div id="press" class="info-section" style="padding-bottom:25px"> 
-        <h2>Press</h2>
-        <ul>
+            </div></div>
+            
+            <button class="accordion-btn"><strong>Press Coverage</strong></button>
+            <div class="accordion-content"><div class="content-inner">
+            <ul>
         <li>
         <p>
         <strong><a href="https://viden.ai/ugens-nyheder-ai-favoriserer-venstreorienterede-politiske-holdninger/" target="_blank">AI favoriserer venstreorienterede politiske holdninger</a></strong> (AI favors left-wing political positions) <i>(Danish)</i>
@@ -826,22 +812,18 @@ Department of Computer Science at University of Copenhagen</a> (<a href="https:/
         <p>Donna Lu, New Scientist (UK), 2019</p>
         </li>
         </ul>
-        </div>
-      </div>
-    </main>
+            </div></div>
+        </main>
+    </div>
 
-    <footer class="footer" style="height:20px">
-      <div class="container">
-        <span class="text-muted"></span>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        document.querySelectorAll('.accordion-btn').forEach(acc => {
+            acc.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+            });
+        });
+    </script>
+</body>
 </html>
